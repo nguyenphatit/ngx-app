@@ -1,0 +1,9 @@
+import {{pascalCase name}}Page from "@/app/{{dashCase name}}/page";
+import {expect, test} from "vitest";
+import {render, screen} from "@testing-library/react";
+
+test('Page', () => {
+  render(<{{pascalCase name}}Page />)
+  expect(screen.getByRole('heading', { level: 1, name: '{{pascalCase name}}Page work!'}))
+    .toBeDefined()
+})

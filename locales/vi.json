@@ -1,0 +1,13 @@
+{
+    "HomePage": {
+      "title": "Xin chào world!",
+      "getStarted": "Bắt đầu bằng cách chỉnh sửa",
+      "code": "app/page.tsx",
+      "saveAndSeeYourChangesInstantly": "Lưu và xem thay đổi của bạn ngay lập tức",
+      "deployNow": "Deploy now",
+      "readOurDocs": "Read our docs",
+      "learnMore": "Learn more",
+      "examples": "Examples",
+      "goToNextjsOrg": "Go to nextjs.org"
+    }
+}
