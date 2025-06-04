@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function HeaderGradient() { 
   return (
-    <div className="opacity-80 pointer-events-none fixed top-0 left-0 right-0 w-full">
+    <div className="opacity-80 pointer-events-none absolute top-0 left-0 right-0 w-full">
       <div className="blur-2xl -translate-y-[30%] min-h-[100svh] overflow-hidden relative">
         <motion.div
           initial={{ x: "-20%", y: "-55%" }}

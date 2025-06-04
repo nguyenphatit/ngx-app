@@ -6,9 +6,9 @@ interface Props {
 
 export default function Template({ children }: Props) {
   return (
-    <>
+    <div className="relative">
       <Navbar />
       {children}
-    </>
+    </div>
   )
 }

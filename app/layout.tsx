@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 const vinaSans = Vina_Sans({
   variable: "--font-vina-sans",
-  subsets: ["latin"],
+  subsets: ["vietnamese"],
   weight: "400",
 });
 
