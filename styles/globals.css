@@ -41,6 +41,15 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-navbar-primary: var(--navbar-primary);
+  --color-navbar-primary-foreground: var(--navbar-primary-foreground);
+  --color-navbar-secondary: var(--navbar-secondary);
+  --color-navbar-secondary-foreground: var(--navbar-secondary-foreground);
+  --color-navbar-accent: var(--navbar-accent);
+  --color-navbar-accent-foreground: var(--navbar-accent-foreground);
+  --color-navbar-border: var(--navbar-border);
+  --color-navbar-ring: var(--navbar-ring);
+  --color-navbar-foreground: var(--navbar-foreground);
 }
 
 :root {
@@ -76,6 +85,16 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --navbar-primary: oklch(0.97 0 0);
+  --navbar-primary-foreground: oklch(0.145 0 0);
+  --navbar-secondary: oklch(0.922 0 0);
+  --navbar-secondary-foreground: oklch(0.1221 0 0);
+  --navbar-accent: oklch(0.708 0 0);
+  --navbar-accent-foreground: oklch(0.1221 0 0);
+  --navbar-border: oklch(0.85 0 0);
+  --navbar-ring: oklch(0.6 0 0);
+  --navbar-foreground: oklch(0.205 0 0);
+  --navbar-glass: oklch(0.97 0 0 / 0.6);
 }
 
 .dark {
@@ -110,6 +129,16 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --navbar-primary: oklch(0.1221 0 0);
+  --navbar-primary-foreground: oklch(0.985 0 0);
+  --navbar-secondary: oklch(0.97 0 0);
+  --navbar-secondary-foreground: oklch(0.205 0 0);
+  --navbar-accent: oklch(0.97 0 0);
+  --navbar-accent-foreground: oklch(0.205 0 0);
+  --navbar-border: oklch(0.922 0 0);
+  --navbar-ring: oklch(0.708 0 0);
+  --navbar-foreground: oklch(0.145 0 0);
+  --navbar-glass: oklch(0.1 0 0 / 0.6);
 }
 
 @layer base {

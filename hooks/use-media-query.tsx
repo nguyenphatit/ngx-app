@@ -1,0 +1,22 @@
+import { useState, useEffect } from 'react';
+
+/**
+ * Custom hook to check if a media query matches.
+ * @param query The media query string to test.
+ * @returns A boolean indicating whether the media query matches.
+ */
+export function useMediaQuery(query: string): boolean {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    if (media.matches !== matches) {
+      setMatches(media.matches);
+    }
+    const listener = () => setMatches(media.matches);
+    window.addEventListener('resize', listener);
+    return () => window.removeEventListener('resize', listener);
+  }, [matches, query]);
+
+  return matches;
+}
