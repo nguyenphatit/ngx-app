@@ -1,13 +1,11 @@
 {
     "HomePage": {
-      "title": "Hello world!",
-      "getStarted": "Get started by editing",
-      "code": "app/page.tsx",
-      "saveAndSeeYourChangesInstantly": "Save and see your changes instantly",
-      "deployNow": "Deploy now",
-      "readOurDocs": "Read our docs",
-      "learnMore": "Learn more",
-      "examples": "Examples",
-      "goToNextjsOrg": "Go to nextjs.org"
+      "title": "Hello world!"
+    },
+    "Navigation": {
+      "home": "Home",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact"
     }
 }

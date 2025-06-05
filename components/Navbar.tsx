@@ -12,15 +12,17 @@ import { ModeToggle } from './ModeToggle';
 import { LocaleToggle } from './LocaleToggle';
 import { Hamburger } from './Hamburger';
 import { X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/', label: 'home' },
+  { href: '/about', label: 'about' },
+  { href: '/blog', label: 'blog' },
+  { href: '/contact', label: 'contact' },
 ];
 
 const Navbar = () => {
+  const t = useTranslations("Navigation");
   const pathname = usePathname();
   const { scrollDirection, scrolled } = useScrollDirection(10);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -64,9 +66,9 @@ const Navbar = () => {
       <nav
         ref={navRef}
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 flex items-center justify-between md:px-20 px-8 py-4 transition-colors duration-300 backdrop-blur-lg',
+          'fixed top-0 left-0 right-0 z-50 flex items-center justify-between md:px-20 px-8 py-4 transition-all duration-300 backdrop-blur-lg',
           isMobileMenuOpen ? 'bg-gray-800' : '',
-          scrollDirection === ScrollDirection.UP && scrolled ? 'bg-navbar-primary/10' : 'bg-transparent'
+          scrollDirection === ScrollDirection.UP && scrolled ? 'bg-navbar-primary/10 border-b-2 border-border shadow-shadow' : 'bg-transparent'
         )}
       >
         {/* Logo */}
@@ -85,7 +87,7 @@ const Navbar = () => {
                   className={cn(
                     'text-navbar-primary-foreground',
                     pathname === link.href ? 'font-bold' : 'font-normal',
-                  )}>{link.label}</Link>
+                  )}>{t(link.label)}</Link>
               );
             })}
             <ModeToggle />
@@ -119,7 +121,7 @@ const Navbar = () => {
                   pathname === link.href ? 'font-bold' : 'font-normal',
                 )}
               >
-                {link.label}
+                {t(link.label)}
               </Link>
             ))}
           </motion.div>

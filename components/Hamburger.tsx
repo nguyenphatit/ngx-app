@@ -17,7 +17,7 @@ export const Hamburger = ({ isActive, setIsActive, direction = "right" }: Hambur
       {Array.from({ length: 3 }).map((_, index) => (
         <motion.div
           key={index}
-          className={cn("h-1 bg-primary rounded")}
+          className={cn("h-1 bg-navbar-primary-foreground rounded")}
           initial={false}
           animate={
             index === 1

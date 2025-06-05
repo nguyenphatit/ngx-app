@@ -17,8 +17,8 @@ export function LocaleToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="cursor-pointer bg-transparent border-navbar-primary-foreground">
-          <Languages className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
+        <Button variant="default" size="icon" className="cursor-pointer bg-transparent border-navbar-primary-foreground">
+          <Languages className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all text-navbar-primary-foreground" />
           <span className="sr-only">Toggle locale</span>
         </Button>
       </DropdownMenuTrigger>
