@@ -42,7 +42,7 @@ export default async function RootLayout({
       >
         <QueryProvider>
           <NextIntlClientProvider locale={locale}>
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+            <ThemeProvider attribute="class" defaultTheme="light" disableTransitionOnChange>
               {children}
             </ThemeProvider>
           </NextIntlClientProvider>

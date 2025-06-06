@@ -8,9 +8,9 @@ import { ScrollDirection, useScrollDirection } from '@/hooks/use-scroll-directio
 import { useMediaQuery } from '@/hooks/use-media-query';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
-import { ModeToggle } from './ModeToggle';
-import { LocaleToggle } from './LocaleToggle';
-import { Hamburger } from './Hamburger';
+import { ModeToggle } from './mode-toggle';
+import { LocaleToggle } from './locale-toggle';
+import { Hamburger } from './hamburger';
 import { X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -22,7 +22,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const t = useTranslations("Navigation");
+  const t = useTranslations("Common");
   const pathname = usePathname();
   const { scrollDirection, scrolled } = useScrollDirection(10);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
